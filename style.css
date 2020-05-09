@@ -1,0 +1,127 @@
+:root {
+	--blue: #0076ea;
+	--white: #fff;
+	--shade: #0076ea99;
+	--bs: 5px 5px 15px 5px #0003;
+}
+
+body {
+	margin: 0;
+	user-select: none;
+	font-size: 2em;
+	font-family: Segoe UI;
+}
+
+.title {
+	position: fixed;
+	width: 100%;
+	font-size: 1.5em;
+	background: var(--blue);
+	color: var(--white);
+	padding: 40px;
+	box-shadow: var(--bs);
+	z-index: 100;
+}
+
+.back {
+	width: 100%;
+	height: 100vw;
+	background: url('https://bit.ly/3dvcmdH');
+	background-size: cover;
+	background-attachment: fixed;
+	/*overflow: hidden;*/
+}
+
+.back .overlay {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: var(--shade);
+}
+
+.back .logo {
+	width: 50vw;
+	height: 50vw;
+	border-radius: 50%;
+	background: url('https://bit.ly/2SOJLIo');
+	background-size: cover;
+	position: relative;
+	margin: auto;
+	margin-top: -70vw;
+	z-index: 50;
+}
+
+.feat {
+	/*background: var(--shade);*/
+	position: absolute;
+	top: 95vw;
+	z-index: 50;
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+}
+
+.feat .list {
+	background: var(--white);
+	width: 250px;
+	text-align: center;
+	padding: 20px 0;
+	border-radius: 10px;
+	box-shadow: var(--bs);
+	font-size: .8em;
+}
+
+.feat .list .main {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.container {
+	position: relative;
+}
+
+.container .enroll {
+	width: 90vw;
+	margin: 5vw;
+	border-radius: 10px;
+	box-shadow: var(--bs);
+	background: var(--blue);
+	padding: 30px 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--white);
+	font-size: 1.2em;
+	margin-top: 100px;
+}
+
+.container .head {
+	width: 90vw;
+	margin: 20px 5vw;
+	border-bottom: 1px solid #555;
+	color: #555;
+}
+
+.container .info {
+	width: 86vw;
+	margin: 0 7vw;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #000;
+	height: 100px;
+	line-height: 100px;
+	font-size: 1.1em;
+}
+
+.carousel {
+	height: 80vw;
+	display: flex;
+	overflow-x: scroll;
+	/*padding-right: 20px;*/
+}
+
+.carousel img {
+	/*display: inline;*/
+	height: 76vw;
+	margin: 20px;
+	border-radius: 20px;
+}
