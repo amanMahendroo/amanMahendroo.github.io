@@ -8,19 +8,7 @@
 body {
 	margin: 0;
 	user-select: none;
-	font-size: 2em;
 	font-family: Segoe UI;
-}
-
-.title {
-	position: fixed;
-	width: 100%;
-	font-size: 1.5em;
-	background: var(--blue);
-	color: var(--white);
-	padding: 40px;
-	box-shadow: var(--bs);
-	z-index: 100;
 }
 
 .back {
@@ -107,8 +95,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid #000;
-	height: 100px;
-	line-height: 100px;
+	height: 60px;
+	line-height: 60px;
 	font-size: 1.1em;
 }
 
