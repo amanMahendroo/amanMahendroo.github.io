@@ -8,6 +8,7 @@
 body {
 	margin: 0;
 	user-select: none;
+	/*font-size: 2em;*/
 	font-family: Segoe UI;
 }
 
@@ -66,6 +67,7 @@ body {
 
 .container {
 	position: relative;
+	padding-top: 50px;
 }
 
 .container .enroll {
@@ -112,4 +114,16 @@ body {
 	height: 76vw;
 	margin: 20px;
 	border-radius: 20px;
+	transition: .25s all ease;
+}
+
+.carousel img.open {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	margin: auto;
+	top: 0;
+	z-index: 100;
+	border-radius: 0;
+	/*display: none;*/
 }
