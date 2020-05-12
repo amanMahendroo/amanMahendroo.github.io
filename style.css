@@ -273,10 +273,13 @@ body {
 
 .features .bonus .icon {
 	color: var(--blue);
-	position: absolute;
+/* 	position: absolute; */
+	width: 40px;
 }
 
 .features .bonus .bonus-name {
 	/*position: absolute;*/
 	margin-left: 40px;
+	margin-top: -20px;
+	font-size: 1.1em;
 }
