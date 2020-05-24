@@ -1,0 +1,164 @@
+.skills {
+	background: #fff;
+	position: absolute;
+	top: 100vh;
+	width: 100vw;
+	height: 100vh;
+}
+
+.skills .title {
+	margin: 50px 0 100px 150px;
+	font-family: Segoe UI Light;
+	color: #005;
+	font-size: 3em;
+}
+
+.skills .code {
+	width: 300px;
+	height: 200px;
+	margin-left: 10vw;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+	background: #333;
+	color: #fff;
+	font-family: consolas;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.skills .head {
+	width: 120%;
+	height: 30px;
+	line-height: 30px;
+	background: #eee;
+	font-family: Segoe UI Light;
+	font-style: italic;
+	text-align: center;
+	color: #333;
+	position: relative;
+	top: -20px;
+	left: -20px;
+}
+
+.skills .head .g, .skills .head .o, .skills .head .r {
+	width: 15px;
+	height: 15px;
+	border: .4px solid #aaa;
+	border-radius: 100%;
+	display: inline-block;
+	margin: 0 3px;
+	position: relative;
+	top: -27px;
+	left: -130px;
+}
+
+.skills .r { background: #d2294a; }
+.skills .o { background: #fa0; }
+.skills .g { background: #0c0; }
+
+.blu { color: #63bcce; }
+.grn { color: #92bd3b; }
+.org { color: #e48d27; }
+.pnk { color: #c2396a; }
+.gre { color: #777; } 
+
+.skills .stats {
+	float: right;
+	margin: -40vh 50px;
+	width: 45vw;
+
+}
+
+.skills .list {
+	height: 70px;
+	margin: 10px 0;
+	position: relative;
+	left: -400px;
+	opacity: 0;
+	transition: .5s all ease;
+}
+
+.skills .open-list {
+	left: 0;
+	opacity: 100;
+}
+
+.skills .list .icon {
+	width: 50px;
+	height: 50px;
+	float: left;
+	filter: grayscale(100%);
+}
+
+.skills progress {
+	-webkit-appearance: none;
+	height: 5px;
+	width: 35vw;
+	float: right;
+	margin: 20px 10px;
+}
+
+.skills progress::-webkit-progress-bar {
+	background: #ccc;
+	border-radius: 5px;
+}
+
+.skills progress::-webkit-progress-value {
+	background: #005;
+	border-radius: 5px;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	.skills .title {
+		position: relative;
+		text-align: center;
+		font-size: 5em;
+		height: 10vh;
+		line-height: 10vh;
+		float: none;
+		margin: 0;
+	}
+
+	.skills .code {
+		position: relative;
+		top: 2vh;
+		width: 80vw;
+		height: 30vh;
+		left: -2vw;
+		font-size: 2.8em;
+	}
+
+	.skills .code .head {
+		height: 60px;
+		line-height: 60px;
+	}
+
+	.skills .code .head .name {
+		width: 90%;
+	}
+
+	.skills .head .g, .skills .head .o, .skills .head .r {
+		left: -400px;
+		top: -70px;
+	}
+
+	.skills .stats {
+		width: 80vw;
+		position: relative;
+		top: 50vh;
+		left: -5vw;
+	}
+
+	.skills .stats .list {
+		margin: 50px 0;
+	}
+
+	.skills .stats .list .icon img {
+		width: 100px;
+		margin-top: -30px;
+	}
+
+	.skills progress {
+		width: 60vw;
+	}
+}

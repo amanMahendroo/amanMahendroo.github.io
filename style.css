@@ -1,0 +1,166 @@
+body {
+	margin: 0;
+	user-select: none;
+	overflow-x: hidden;
+	font-family: Segoe UI;
+}
+
+.nav .ham {
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	margin-top: 20px;
+	margin-left: 20px;
+	/*background: #f00;*/
+	cursor: pointer;
+	z-index: 900;
+}
+
+.nav {
+	position: fixed;
+	z-index: 900;
+}
+
+.nav .ham .a, .nav .ham .b, .nav .ham .c {
+	width: 57%;
+	height: 5%;
+	margin: 11% 20%;
+	background: #ccc;
+	border-radius: 1.5px;
+	transition: .25s all ease;
+}
+
+.nav .ham .b { width: 29%; }
+.nav .ham .c { width: 43%; }
+
+.nav .ham:hover .a, .nav .ham:hover .b, .nav .ham:hover .c {
+	width: 57%;
+}
+
+.open .ham .a, .open .ham .b, .open .ham .c {
+	background: #005;
+}
+
+.over1, .over2, .over3 {
+	background: #ccc;
+	position: fixed;
+}
+
+.over1 {
+	width: 60vw;
+	height: 60vh;
+	top: 60vh;
+	left: -60vw;
+	clip-path: polygon(0 0, 100% 0, 0 100%);
+	transition: .25s all ease;
+}
+
+.over2 {
+	width: 150vw;
+	height: 150vh;
+	top: -150vh;
+	left: 100vw;
+	clip-path: polygon(0 0, 100% 0, 33% 67%, 0 67%);
+	transition: .5s all cubic-bezier(.5, 0, .5, 1);
+}
+
+.over3 {
+	width: 60vw;
+	height: 60vh;
+	top: 100vh;
+	left: -20vw;
+	clip-path: polygon(100% 0, 100% 100%, 0 100%);
+	transition: .75s all cubic-bezier(.75, -0.5, .75, 1);
+}
+
+.open .over1 {
+	top: 0;
+	left: 0;
+}
+
+.open .over2 {
+	top: 0;
+	left: 0;
+}
+
+.open .over3 {
+	top: 40vh;
+	left: 40vw;
+}
+
+.nav .container {
+	display: none;
+}
+
+.open .container {
+	width: 80vw;
+	height: 80vh;
+	position: fixed;
+	top: 10vh;
+	left: 10vw;
+	z-index: 900;
+}
+
+.open .disp {
+	display: block;
+}
+
+.container .list {
+	width: 35vw;
+	height: 11vh;
+	margin-top: 2vh;
+	margin-left: 12vw;
+	padding-left: 50px;
+	display: block;
+	color: #005;
+	line-height: 11vh;
+	font-size: 2em;
+	font-family: Segoe UI Light;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.container .list .hide {
+	background: #ccc;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: -100%;
+	transition: .25s all ease;
+}
+
+.container .list .no-hide {
+	top: -200%;
+}
+
+.container .list .hover {
+	width: 2px;
+	height: 50%;
+	background: #005;
+	position: relative;
+	left: -10px;
+	top: -99%;
+	transition: .25s all ease;
+}
+
+.container .list:hover .hover {
+	top: -175%;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	.nav .ham {
+		width: 200px;
+		height: 200px;
+	}
+
+	.nav .container {
+		font-size: 2em;
+		/*width: 80vw;*/
+	}
+
+	.nav .container div {
+
+	}
+}
